@@ -7,10 +7,9 @@ import { configObject } from "./config/index.js";
 const app = express();
 
 /* const mongoOptions = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  };
- */
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}; */ 
 
 app.use(json());
 app.use(urlencoded({ extended: true }));
@@ -21,10 +20,10 @@ app.use(
     rolling: true,
     secret: "coderhouse",
     store: new MongoStore({
-      mongoUrl: configObject.mongoUrl, /* mongoOptions */
+      mongoUrl: "mongodb://127.0.0.1:27017/test"
     }),
-    Cookie: {
-      maxAge: 3000,
+    cookie: {
+      maxAge: 10000, // Cuanto queremos que dure la sesion
     },
   })
 );
