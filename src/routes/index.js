@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { authController } from "../controllers/index.js";
+import { randomController } from "../controllers/random.controller.js";
 import { authMiddlewares } from "../middlewares/auth.middleware.js";
 
 const router = Router();
@@ -10,7 +11,7 @@ router
   .post(authMiddlewares.checkNotLogged, authController.login);
 router
   .route("/register")
-  .get(authMiddlewares.checkNotLogged, authController.serverRegister)
+  .get(authMiddlewares.checkNotLogged, authController.serverResgister)
   .post(authMiddlewares.checkNotLogged, authController.register);
 router
   .route("/logout")
@@ -18,5 +19,8 @@ router
 router
   .route("/welcome")
   .get(authMiddlewares.authMiddleware, authController.serverWelcome);
+
+router.get("/random", randomController.getRandom);
+router.get("/info", randomController.getInfo);
 
 export default router;

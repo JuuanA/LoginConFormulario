@@ -2,6 +2,7 @@ import MongoStore from "connect-mongo";
 import express, { json, urlencoded } from "express";
 import session from "express-session";
 import expHbs from "express-handlebars";
+import router from "./routes/index.js";
 import { configObject } from "./config/index.js";
 
 const app = express();
@@ -12,6 +13,7 @@ const app = express();
 }; */ 
 
 app.use(json());
+app.use('/', router)
 app.use(urlencoded({ extended: true }));
 app.use(
   session({
@@ -31,6 +33,7 @@ app.use(
 app.engine(".hbs", expHbs({ extname: ".hbs", defaultLayout: "main.hbs" }));
 app.set("view engine", ".hbs");
 
-app.listen(3000, () => {
-  console.log("Escuchando server 3000");
-});
+app.listen('3000', () => {
+    console.log("server listening port 3000");
+})
+
