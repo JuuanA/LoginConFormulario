@@ -3,10 +3,10 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const users = ["salva"];
+const users = ["juansito"];
 
 const serverLogin = (req, res) => {
-  res.sendFile(join(__dirname, "../views/"));
+  res.sendFile(join(__dirname, "../../views/login.html"));
 };
 
 const login = (req, res) => {
@@ -21,7 +21,7 @@ const login = (req, res) => {
   res.redirect("/welcome");
 };
 
-const serverResgister = (req, res) => {
+const serverRegister = (req, res) => {
   res.sendFile(join(__dirname, "../../views/register.html"));
 };
 
@@ -53,7 +53,7 @@ const serverWelcome = (req, res) => {
 export const authController = {
   serverLogin,
   login,
-  serverResgister,
+  serverRegister,
   register,
   logout,
   serverWelcome,
