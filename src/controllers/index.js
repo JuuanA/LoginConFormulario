@@ -6,7 +6,7 @@ const __dirname = dirname(__filename);
 const users = ["salva"];
 
 const serverLogin = (req, res) => {
-  res.sendFile(join(__dirname, "../../views/login.html"));
+  res.sendFile(join(__dirname, "../views/"));
 };
 
 const login = (req, res) => {

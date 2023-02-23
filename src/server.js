@@ -14,6 +14,18 @@ const app = express();
 
 app.use(json());
 app.use('/', router)
+/* app.get('/', function(req, res) {
+  // si la request tien el user object, va  ala pagina de usuario
+  if (req.user) {
+      res.redirect("/user/" + req.user._id);
+  }
+
+  res.render("index")
+  ;
+  app.get('/user/:uid', function(req, res) {
+    console.log(req.user) // undefined
+  )} */
+
 app.use(urlencoded({ extended: true }));
 app.use(
   session({
@@ -25,7 +37,7 @@ app.use(
       mongoUrl: "mongodb://127.0.0.1:27017/test"
     }),
     cookie: {
-      maxAge: 10000, // Cuanto queremos que dure la sesion
+      maxAge: 10000000, // Cuanto queremos que dure la sesion
     },
   })
 );
