@@ -1,0 +1,19 @@
+2023/02/16 19:45:22 [error] 9636#2364: *1 CreateFile() "D:\Windows\Escritorio\nginx\nginx-1.22.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2023/02/16 19:50:21 [error] 9636#2364: *2 CreateFile() "D:\Windows\Escritorio\nginx\nginx-1.22.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2023/02/27 20:01:53 [emerg] 15876#4720: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:18
+2023/02/27 20:20:58 [emerg] 20924#20664: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:26:57 [emerg] 20200#11824: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:28:02 [emerg] 20292#9844: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:28:04 [emerg] 19060#3940: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:28:16 [emerg] 14012#12116: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:28:19 [emerg] 1488#6552: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:29:08 [emerg] 3032#11332: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:29:14 [emerg] 21004#4860: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:29:45 [emerg] 648#20604: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:31:29 [emerg] 9080#3520: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:32:58 [emerg] 4544#1256: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:33:00 [emerg] 3420#5184: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:36:23 [emerg] 12688#12764: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:37:04 [emerg] 2724#18964: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:37:18 [emerg] 4160#19520: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22
+2023/02/27 20:37:42 [emerg] 11096#6376: invalid number of arguments in "root" directive in D:\Windows\Escritorio\Apps\coder\Curso Backend\DesafioLoginConFormulario\nginx/conf/nginx.conf:22

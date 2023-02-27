@@ -57,7 +57,7 @@ if (cluster.isPrimary && params.mode.toUpperCase() === "CLUSTER") {
   app.engine(".hbs", expHbs({ extname: ".hbs", defaultLayout: "main.hbs" }));
   app.set("view engine", ".hbs");
 
-  app.use("/", router);
+  app.use("/api/randoms", router);
 
   app.listen(params.port, () => {
     console.log(`Escuchando puerto ${params.port}`);
