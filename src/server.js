@@ -64,30 +64,4 @@ if (cluster.isPrimary && params.mode.toUpperCase() === "CLUSTER") {
   });
 }
 
-/* app.use(json());
 
-app.use(urlencoded({ extended: true }));
-app.use(
-  session({
-    resave: false,
-    saveUninitialized: false,
-    rolling: true,
-    secret: "coderhouse",
-    store: new MongoStore({
-      mongoUrl: "mongodb://127.0.0.1:27017/test",
-    }),
-    cookie: {
-      maxAge: 10000000, // Cuanto queremos que dure la sesion
-    },
-  })
-);
-
-app.engine(".hbs", expHbs({ extname: ".hbs", defaultLayout: "main.hbs" }));
-app.set("view engine", ".hbs");
-
-app.use("/", router);
-
-app.listen("3000", () => {
-  console.log("server listening port 3000");
-});
- */
